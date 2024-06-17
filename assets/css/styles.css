@@ -1,0 +1,193 @@
+.photo-gallery {
+    color: #313437;
+    background-color: #fff
+}
+
+    .photo-gallery p {
+        color: #7d8285
+    }
+
+    .photo-gallery h2 {
+        font-weight: 700;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        color: inherit
+    }
+
+ul {
+    list-style-image: url('../img/bullet.gif');
+}
+
+@media (max-width:767px) {
+    .photo-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px
+    }
+
+    .simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
+        display: none
+    }
+}
+
+.photo-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px
+}
+
+    .photo-gallery .intro p {
+        margin-bottom: 0
+    }
+
+.photo-gallery .photos {
+    padding-bottom: 20px
+}
+
+.photo-gallery .item {
+    padding-bottom: 30px
+}
+
+.simple-slider .swiper-slide {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+@media (max-width:767px) {
+    .simple-slider .swiper-slide {
+        height: 360px
+    }
+}
+
+.cta-content h2 {
+    font-size: 50px;
+    /*max-width: 600px !important;*/
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #fff
+}
+
+
+blockquote * {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+blockquote {
+    border: 1px solid #696868;
+    border-radius: 5px;
+    padding: 1rem;
+    background: rgba(54, 25, 25, .5);
+}
+@media (max-width:576px) {
+    blockquote {
+        margin-top: 30px
+    }
+}
+    blockquote p i.fa.fa-quote-right {
+        font-size: 125%;
+        font-weight: lighter;
+        margin-bottom: -40px;
+        line-height: 100%;
+        padding: 0 5px 5px 0;
+        font-style: italic;
+    }
+
+    blockquote figcaption {
+        /*color: lightgrey;*/
+        font-size: 0.7rem;
+    }
+
+a[href^="https"]:after {
+    font-family: FontAwesome;
+    font-style: normal;
+    content: "\f08e";
+    padding-left: 5px;
+    vertical-align: middle;
+    font-weight: 100;
+    white-space: nowrap;
+}
+a {
+    color: #c59c37;
+}
+
+
+.lnkCopy:after { content: "" !important; }
+
+@media all and (min-width:768px) {
+    .dfInfoBox>.row>.col-md-4 {
+        -ms-flex: 1;
+        flex: 1;
+        max-width:100%;
+    }
+}
+
+#btnScrollToTop {
+    display: none;
+    right: 5px;
+    bottom: 5px;
+    position: fixed;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 3;
+    border: 0;
+}
+.noArrow:after {
+    content: none !important;
+}
+.cta {
+    padding-top: 7% !important
+}
+
+.btn-outline-warning:hover {
+    background-color: goldenrod;
+}
+
+.btn-outline-warning {
+    margin-bottom: 30px; 
+}
+h2 {
+    color: #ffffff;
+   /* font-size: 25px !important;*/
+}
+
+/*running horse*/
+@font-face { 
+    font-family: 'MuybridgeGX';
+    src: url('MuybridgeGX.woff2') format('woff2-variations');
+}
+@keyframes Gallop {
+    from {font-variation-settings: "TIME" 0;}
+    to {font-variation-settings: "TIME" 1000;}
+}
+#runningHorse {
+    font: 90px MuybridgeGX;
+    animation: 0.6s linear infinite Gallop;
+}
+#runningHorse:hover {animation-duration: 4s;color:blue;}
+    #runningHorse::after {
+        content: " become a member of THE ! association";
+        font-size: 0.3em;
+        font-family: Catamaran;
+        font-weight: 200;
+        line-height:1.2em !important;
+        display:inline-block;
+        /*color: darkblue;*/
+    }
+#runningHorse:hover{cursor:pointer;}
+
+/*#region Wikipedia preview box settings (https://su-pa.net/wikiPrevBox)*/
+a.wikiLink::after {
+	/*color:#c59c37 !important;*/	  /* color of the 'W' after a Wikipedia link // default: inherit; */
+	font-size: 0.7em !important;	/* size of the 'W' after a Wikipedia link // default: 0,8em; */
+}
+/*#endregion*/
+
+#collaboration a {color:darkblue; } 

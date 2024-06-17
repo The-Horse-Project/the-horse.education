@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- https://codepen.io/lorp/details/RMmRgB -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        @font-face {
+            font-family: 'MuybridgeGX';
+            src: url('MuybridgeGX.woff2') format('woff2-variations');
+        }
+
+        @keyframes Gallop {
+            from {
+                font-variation-settings: "TIME" 0;
+            }
+
+            to {
+                font-variation-settings: "TIME" 1000;
+            }
+        }
+
+        #runningHorse{
+            font: 320px MuybridgeGX;
+            animation: 0.6s linear infinite Gallop;
+        }
+
+            #runningHorse:hover {
+                animation-duration: 6s;
+            }
+    </style>
+</head>
+<body>
+
+    <span id="runningHorse">🐎</span>
+    
+</body>
+</html>
