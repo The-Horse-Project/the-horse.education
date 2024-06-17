@@ -5,4 +5,5 @@ Our aim is to promote Intercultural Collaborative Online Learning (COIL) environ
 
 The Horse provides all the necessary infrastructure, tools and support to make the projects happen.
 
-[THE ! assocaition](https://the-horse.education) (the-horse.education)
+It's a bootstrap website, it was built after the founding of 
+[THE ! assocaition](https://the-horse.education) (the-horse.education).
