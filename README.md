@@ -1,9 +1,9 @@
-# The Horse Project news
+# The Horse Project (THE ! association)
 
-This is the news website of **THE ! association**.
+This is the website of THE ! association.
 Our aim is to promote Intercultural Collaborative Online Learning (COIL) environmental projects for young people, students, teachers, and institutions all over the world.
 
 The Horse provides all the necessary infrastructure, tools and support to make the projects happen.
 
-This website (bootstrap) was built for an input presentation and panel discussion on "The Horse" at the Movetia Conference, 16 May 2018.
-[teachingweb.org](https://teachingweb.org/en) (teachingweb.org)
+It's a bootstrap website, it was built 09/2018, one year after the foundation of  
+[THE ! association](https://the-horse.education) (the-horse.education).
