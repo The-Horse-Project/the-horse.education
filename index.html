@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/votingup.min.css">
     <link href="assets/css/Project-List.min.css" rel="stylesheet" />
 
-    <link href="assets/css/styles.min.css?v=2.2" rel="stylesheet" />
+    <link href="assets/css/styles.min.css?v=3.0" rel="stylesheet" />
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" />
 
@@ -47,7 +47,6 @@
         }
         .qrBox{display: flex;width:400px;max-width:95%;}
         details{ margin-bottom:13px;}
-
         .niceBr br{
             display:block;
             content:"";
@@ -58,11 +57,40 @@
         .okkerPart ul li{line-height: 1.3em;margin-bottom: 0.5em;font-size: 1em;margin-left: -1.7em;}
         .okkerPart ul li span{font-size:0.8em;}
         .okkerPart ul li::before{content: "• ";font-weight: bold; font-size:1.2em; color:darkolivegreen}
+        .team-clean .item img {max-width: 160px;}
+        #mainNav .navbar-nav>li>a.active {
+            color: rgb(217, 120, 23) !important;
+            background-color: transparent;
+        }
+        
+        #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover, #mainNav.navbar-shrink .navbar-nav>li>a:hover {color: rgb(217, 120, 23);}
+        a:focus, a:hover {color: rgb(217, 120, 23);}
+        .figPresent{
+            display:flex;
+            align-items:flex-start;
+            flex-wrap: wrap;
+        } 
+        /* 
+        .figPresent>:nth-child(1) { 
+            flex: 1 1; 
+        } */
+        a.lnkOnImgNoArrow::after {content:'';}
+
+        section {
+            padding: 80px 0;
+        }
+              
     </style>
+    <style>
+       
+        
+    </style>
+
 </head>
 <body id="page-top">
 
     <!--#region website-->
+ 
     <!--#region nav-->
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
@@ -74,16 +102,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#association" title="coming soon - website in progress">THE ! association</a></li>
-                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#joinin">Join in / donate</a></li>
-                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#collaboration">Contact &amp; About</a></li>
+                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>                    
+                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#team" title="">THE ! Team</a></li>
+                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#joinin">Join in</a></li>
+                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#association" title="">THE ! association</a></li>
+                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#collaboration">Press</a></li>
+                    <li class="nav-item" role="menuitem"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors & Partners</a></li>                    
                 </ul>
             </div>
         </div>
     </nav>
     <!--#endregion nav-->
-
+ 
+    <!--#region part above-->
     <section class="cta masthead header" style="background-image: url('assets/img/working-plate.jpg'); padding-bottom:80px;">
         <div class="cta-content">
             <div class="container">
@@ -103,25 +134,22 @@
                         Map with collaboration projects :: click to open ::</a><br>
                         <span style="color:white">The projects are published on</span> <a href="https://dontwastemy.energy" target="_blank" rel="noopener">dontwastemy.energy</a>
                         
-                        <div class="dfInfoBox" style="color: #ffffff;font-size:0.9em; padding:2em;">
+                        <div class="dfInfoBox" style="color: #ffffff;font-size:1em; padding:2em;">
                             <h2 style="font-size: 25px;margin-bottom:0.2em;">Testimonials</h2>
                             <p style="font-size:0.9em;">
                                 How is it to the use 
                                 <a href="https://dontwastemy.energy/the-horse-concept/" target="_blank" rel="noopener">"The Horse" concept</a> with the                                 
                                 <a href="https://dontwastemy.energy/2019/02/07/new-teaching-and-learning-concept/" target="_blank" rel="noopener">
-                                    «befter» method</a> ?                           
-                            
-                            <a href="https://archive.org/details/@the-horse_education" target="_blank" 
-                            rel="noopener" title="overview all videos">All Interviews on one page</a> (archive.org)<br><br>
+                                    «befter» method</a> ?<br><br>
 
-                                Two new insights (2022) from 
+                                Two insights from 
                                 <a href="https://archive.org/details/ilkay-from-izmir-experince-with.the-horse-concept-v-1.1" 
                                     target="_blank" rel="noopener">Ilkay Nargaz Gulek</a> (Turkish culture and English teacher from Izmir) and 
                                 <a href="https://archive.org/details/reshma-rajesh-about-the-horse" 
-                                    target="_blank" rel="noopener">Reshma Rajesh</a> (student from Kerala, India)
+                                    target="_blank" rel="noopener">Reshma Rajesh</a> (student from Kerala, India), 2022
                                 <br>
 
-                            <a class="noArrow" href="https://archive.org/details/@the-horse_education" target="_blank" rel="noopener" title="overview all videos">
+                                <a class="noArrow" href="https://archive.org/details/@the-horse_education" target="_blank" rel="noopener" title="overview all videos">
                                     <img style="max-width:55%;margin:7px 0;min-width:160px;border-radius:6px;" src="assets/img/Ilkay-Reshma-interview-The-Horse-concept.jpg"
                                     alt="Insight view using The Horse concept with student Reshma (India) and teacher Ilkay (Turkey) about their cross border projects."
                                     title="Insight view using The Horse concept & the befter method." />
@@ -150,6 +178,14 @@
                                     <a href="https://archive.org/details/@the-horse_education" target="_blank" 
                                     rel="noopener" title="overview all videos">All Interviews above on one page</a> (archive.org)
                             </p>
+                            <p>
+                                <h3 style="font-size:22px;margin-top:2.1em">Some statistics</h3>
+                                <img style="float:left;height:70px;margin-right: 9px;" src="assets/img/statistics.gif" alt="statistics dwme" title="statistics dwme">
+                                <strong>In 2023</strong> <a href="https://dontwastemy.energy" 
+                                target="_blank" rel="noopener">dontwastemy.energy</a> has proudly hosted <strong>253.697 wonderful visitors</strong>, 
+                                with <strong>129.449 unique individuals</strong>, and a remarkable total of <strong>1.442.854 page views</strong>! 
+                                (excluding search engines and bots, of course)<br><br>  
+                            </p>
                             
                         </div>
                     </div>
@@ -157,9 +193,12 @@
                     <div class="col dfInfoBox" style="color: #ffffff;margin: 5% 3% 0 3%">
                         <div class="col" style="width:100%;height: 100% !important; overflow:hidden;display:inline-block;">
                             <h1 style="color: #ffffff;font-size: 25px;margin-bottom: 0.8em;">
-                                The Horse project - Collaborations across borders, <span lang="de">Zusammenarbeit über Grenzen</span>!
+                                The Horse project, Collaborations across borders, <span lang="de">Zusammenarbeit über Grenzen</span>!
                             </h1>
-                            <strong>The Horse concept</strong> – a splendid way for teachers and learners to carry out collaborative projects with a sustainable impact.                       
+                            <strong>The Horse concept</strong> – a splendid way for teachers and learners to carry out collaborative projects with a sustainable impact.
+                            <br><br>
+                            [2024/2025] "The Horse" project has received a grant from <a href="https://www.movetia.ch/en" target="_blank" rel="noopener">Movetia</a>, the Swiss National Agency for Exchange and Mobility. 
+                            <br>Das "The Horse" Projekt hat von <a href="https://www.movetia.ch" target="_blank" rel="noopener">Movetia</a>, der Nationalen Agentur für Austausch und Mobilität, einen Förderbeitrag erhalten.
                             <br><br>
                             <a href="https://blog.su-pa.net/post/zol-doppelseite-the-horse-project" target="_blank" rel="noopener">
                             <img style="float:left;height:60px;margin-right: 9px;" src="assets/img/ZOL-2-seitiger-artikel-ueber-The-Horse.jpg">
@@ -167,16 +206,6 @@
                             <br><br><a href="#collaborationD" class="js-scroll-trigger">Weitere Informationen und Pressetexte in Deutsch &darr;</a>
                             
                             <br><br>
-                            <style>
-                                .figPresent{
-                                    display:flex;
-                                    align-items:flex-start;
-                                    flex-wrap: wrap;
-                                }
-                                .figPresent>:nth-child() {
-                                    flex: 1 1;
-                                }
-                            </style>
 
                             <article style="color: #ffffff;font-size:0.9em">
                                 [12/14/2022] <strong>«The Horse» at Geneva Forum at United Nations</strong>                                
@@ -202,9 +231,9 @@
                                 [05/30/2022] <strong>We've never had as many collaborative projects from all over the world as we did in 2022!</strong>
                                 There are a lot of valuable new contributions on <a target="_blank" rel="noopener" href="https://dontwastemy.energy/category/collaborations/">dontwastemy.energy</a>.
                                 <br><br>
-                                The interactive <b>map on the top left</b> shows realized collaborations.<br>
+                                The interactive <b>map on the top</b> shows realized collaborations.<br>
                                 Institutions that have participated so far:
-                                <ul style="list-style-type:disc;list-style-image:none;margin-top:15px;">
+                                <ul style="list-style-type:disc;list-style-image:none;margin-top:15px;padding-left:2.2em">
                                     <li><a href="https://en.wikipedia.org/wiki/Kerala">Kerala</a>, India, <a href="http://www.christnagarschoolicse.edu.in/" target="_blank" rel="noopener">Christ Nagar Higher Secondary School</a></li>
                                     <li><a href="https://en.wikipedia.org/wiki/Zurich">Zürich</a>, Switzerland, <a href="https://wkvw.ch" target="_blank" rel="noopener">wkvw Wetzikon</a></li>
                                     <li><a href="https://en.wikipedia.org/wiki/Izmir">İzmir</a>, Turkey, <a href="https://cbal.meb.k12.tr/" target="_blank" rel="noopener">İzmir Bornova Cem Bakioğlu Anadolu Lisesi</a></li>
@@ -221,22 +250,15 @@
                                      <a href="https://dontwastemy.energy/2019/02/07/new-teaching-and-learning-concept/" target="_blank" rel="noopener">"befter" method</a>.<br><br>
                              </article>
                              <article>   
-                                <h3 style="font-size:22px;">Some facts about «The Horse» concept</h3>
+                                <h3 style="font-size:22px;">Some facts about «The Horse» project</h3>
                                 Since 2016 (to 08/2023) in total 194 published team contributions on
                                 <a href="https://dontwastemy.energy" target="_blank" rel="noopener">dontwastemy.energy</a>
-                                originated under "The Horse" concept and the "befter" approach; <a class="js-scroll-trigger" href="#collaboration">further 
+                                originated under "The Horse" concept using the "befter" method and the COIL approach; <a class="js-scroll-trigger" href="#collaboration">further 
                                     information below</a>.<br><br>
                                     From a <strong>variety of countries</strong>, odd <strong>480 students</strong>
                                 published their projects, including 20 teachers, ~17 experts & scientists, and
                                 a number of comments were given. In addition, more than 390 students used the non-puplic part of "The Horse" 
-                                infrastructure for working together.
-                                <br><br>
-                                <h3 style="font-size:22px;">Some statistics</h3>
-                                <img style="float:left;height:70px;margin-right: 9px;" src="assets/img/statistics.gif" alt="statistics dwme" title="statistics dwme">
-                                <strong>So far in 2023 (till 08/20/23)</strong> <a href="https://dontwastemy.energy" 
-                                target="_blank" rel="noopener">dontwastemy.energy</a> has proudly hosted <strong>199,888 wonderful visitors</strong>, 
-                                with <strong>96,083 unique individuals</strong>, and a remarkable total of <strong>more than 1 million (1,052,632) page views</strong>! 
-                                (excluding search engines and bots, of course)<br><br>                            
+                                infrastructure for working together.                         
                             </article>
                         </div>
                     </div>
@@ -426,11 +448,93 @@
         </div>
         <div class="overlay"></div>
     </section>
+    <!--#endregion-->
+
+    <!--#region THE ! team-->
+    <section id="team" class="team-clean" style="text-align:center;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" style="font-size: 2.7em;color:#212529;margin-bottom:0.6em;">THE ! Team</h2>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Eliane-Suter.jpg" alt="Eliane Suter" title="">
+                    <h3 class="name">Eliane Suter</h3>
+                    <p class="title">
+                        <strong>President of THE ! association</strong>
+                        <br>
+                        Concept, environmental & educational advisor.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Barbara-Jaeckli.jpg"  alt="Barbara Jäckli" title="">
+                    <h3 class="name">Barbara Jäckli</h3>
+                    <p class="title">
+                        <strong>Board Member</strong>
+                        <br>Biologist, environmental activist, translator, former teacher.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Dominik-Fehr.jpg"  alt="Dominik Fehr" title="">
+                    <h3 class="name">Dominik Fehr</h3>
+                    <p class="title">
+                        <strong>Board Member</strong>
+                        <br>Concept, Technical Head.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Peter-Binz.jpg"  alt="Peter Binz" title="">
+                    <h3 class="name">Peter Binz</h3>
+                    <p class="title">
+                        <strong>Board Member</strong>
+                    <br>Former teacher, biochemist and musician.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Sivani-L-R.jpg" alt="Sivani L R, Kerala, India" title="">
+                    <h3 class="name">Sivani L R</h3>
+                    <p class="title">
+                        <strong>Project assistant, THE ! ambassador</strong>
+                        <br>Student of Computer Science, LBS Institute of Technology, India
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Stefan-Kammhuber.jpg" alt="Prof. Dr. Stefan-Kammhuber, head of IKIK" title="">
+                    <h3 class="name">Prof. Dr. Stefan Kammhuber</h3>
+                    <p class="title">
+                        <strong>Scientific advisor</strong>, director <a href="https://www.ost.ch/de/forschung-und-dienstleistungen/interdisziplinaere-themen/ikik" target="_blank" rel="noopener">ikik</a>, 
+                        Institute for Communication and Intercultural Competence.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Jasmine-Schmid.jpg" alt="Jasmine Schmid" title="">
+                    <h3 class="name">Jasmine Schmid</h3>
+                    <p class="title">
+                        <strong>Marketing, Graphics, Social Media</strong><br>
+                        Graphic Design Communication, Art School Zurich, PR
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Jael-Locher.jpg" alt="Jael Locher" title="">
+                    <h3 class="name">Jael Locher</h3>
+                    <p class="title">
+                        <strong>Project Assistant, THE ! ambassador</strong>
+                        <br>MSc in Environmental Science and Engineering.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <img class="rounded-circle" src="assets/img/team/Katerina-Kuneva.jpg" alt="Katerina Kuneva" title="">
+                    <h3 class="name">Katerina Kuneva</h3>
+                    <p class="title">
+                        <strong>Coordination, Technical assistant</strong>
+                        <br>UZH, Student of Informatics and Computational Science and Engineering.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#endregion the team-->
 
     <!--#region join in/donate-->
     <section id="joinin" class="contact bg-primary">
         <div style="display:inline-block;width:550px;max-width:95%;text-align:left">
-            <h2 style="padding:0;margin:0;">Join in / donate <i style="color:orangered" class="fa fa-users"></i></h2>
+            <h2 style="font-size: 2.7em;color:#212529;">Join in / donate <i style="color:orangered" class="fa fa-users"></i></h2>
 
             <div class="buttons">
                 <div style="display:inline-block" id="runningHorse" title="Become a member of THE ! association - The Horse Education association"
@@ -438,8 +542,8 @@
                 <div style="font-size:0.9em;text-align:center">Hover or tap for slow motion.</div>
             </div>
 
-            <div class="niceBr" style="text-align:center;margin:30px 0 30px 0">
-                «The Horse» organization is a <strong>non‑profit</strong> association.<br class="niceBr">
+            <div class="niceBr" style="margin:30px 0 30px 0">
+                <strong>«The Horse» project is a non‑profit association.</strong><br class="niceBr">
                 We believe in cross-border collaboration and learning trought experiences to change reality. For a distinct more enjoyable future!
             </div>
 
@@ -520,7 +624,7 @@
         <div class="container">
             <h2 style="font-size: 2.5em;color:#212529;" class="text-center">THE ! association</h2>
             <p id="whyTheHorse">
-                The Horse Education (THE) association' main purpose is the promotion and dissemination of «<strong>The Horse Concept</strong>».
+                <strong>The Horse Education (THE) ! association</strong>' main purpose is the promotion and dissemination of «<strong>The Horse Concept</strong>».
                 The association was <strong>founded on 9/19/2018</strong> by Eliane Suter, Barbara Jäckli, Peter Binz and Dominik Fehr. 
                 These form the board of the association, Eliane is the president.
             </p>
@@ -549,16 +653,10 @@
                         <li>Promote sustainable thinking and action, collaboration, social fairness and in general, the idea of a healthy environment, both in Switzerland and globally according to the current <a href="https://www.un.org/sustainabledevelopment/" target="_blank">UN Sustainable Development Goals</a> (un.org).</li>
                         <li>Promote participation and engagement in public life in order to make evidence-based decisions.</li>
                     </ul>
-                    <p>
-                        <a href="https://teachingweb.org/en/" target="_blank" rel="noopener">News & more information (teachingweb.org, Englisch)</a><br>
-                        <a href="https://teachingweb.org/" target="_blank" rel="noopener">Neuigkeiten, Informationen (teachingweb.org, Deutsch)</a><br>
-                        <a href="https://dontwastemy.energy" target="_blank" rel="noopener">Collaboration projects website (dontwastemy.energy)</a><br>
-                        <a href="#collaboration">Press / Presseartikel &#129059;</a>
-                    </p>
 
                     <h3>THE ! Horse association statutes</h3>
                     <p>
-                        <a href="assets/pdf/THE-association_Statutes_V1.2_ENG.pdf">THE ! The Horse Education assotiation statutes (PDF)</a>
+                        <a href="assets/pdf/THE-association_Statutes_V1.2_ENG.pdf" target="_blank">THE ! The Horse Education assotiation statutes, 2019-04-01 (PDF)</a>
                     </p>
                 </div>
                 <div class="col-md-6">
@@ -568,24 +666,29 @@
                     <span style="font-size:0.9em;">It's always possible to achieve higher goals.</span>
                 </div>
             </div>
+            <br>
+            <!--#region contact-->
+            <h3 style="color:black">Contact <i style="color:orangered" class="fa fa-comments"></i></h3>
+            <p>          
+                Do you have a question, a comment or would you like<br>to try out the concept? We love to hear from you!
+                <br><br>
+                <b>Contact/Kontakt:</b> <script>document.write("<a style='color: darkblue' " + "href=\'mailto:engage" + "@the-horse.education'>engage" + "@the-horse.education</a>")</script>
+            </p>
+            <h3>Seat of the association/Vereinssitz</h3>
+            <p>THE ! association<br>
+                Friedheimstr. 5, c/o B. Jäckli<br>
+                8057 Zürich<br>Switzerland
+            </p>
+            <!--#endregion-->
         </div>
+
     </section>
     <!--#endregion THE ! association-->
 
-    <!--#region contact & about -->
+    <!--#region press -->
     <section id="collaboration" class="contact bg-primary">
-        <!--#region contact-->
-        <h2>Contact<i style="color:orangered" class="fa fa-comments"></i></h2>
-        <p>          
-            <strong>Do you have a question, a comment or would you like<br>to try out the concept? We would love to hear from you!</strong>
-            <br>Eliane Suter, 
-            <script>document.write("<a style='color: darkblue' " + "href=\'mailto:eliane" + "@the-horse.education'>eliane" + "@the-horse.education</a>")</script>
-        </p>
-        <!--#endregion-->
-
         <!--#region About «The Horse» project--> 
-        <br>
-        <h2 id="collaborationD">About «The Horse» project</h2>
+        <h2 id="collaborationD">Press «The Horse» project</h2>
         <p>
             Seit 2016. Since 2016.<br>            
             <a href="#whyTheHorse" class="js-scroll-trigger">Why is it called «The Horse»</a> 
@@ -648,7 +751,7 @@
                 </li>
             </ul>
             <!--#endregion movetia-->
-            <p style="font-size:1em;">Studentenzeitung/student magazine, WKVW inside journal, year 2023, 2022, 2021</p>
+            <p style="font-size:1em;">Projects presented in the Studentenzeitung/student magazine, WKVW inside journal, issues years 2023, 2022, 2021.</p>
 
             <!--#endregion-->
 
@@ -690,38 +793,38 @@
             <h4>Participations, presentations, workshops</h4>
             <ul>
                 <li>
-                    <strong><a href="https://www.osi-genevaforum.org/" target="_blank" rel="noopener">Geneva Forum</a> at 
-                    <a href="https://en.wikipedia.org/wiki/United_Nations_Office_at_Geneva">United Nations</a></strong>, 12/14/2022<br>
-                    <strong><a href="https://youtu.be/J4zPBEkXKL0?t=4381" target="_blank" rel="noopener">
-                        «The Horse» concept &ndash; presentation and vision by Eliane Suter</a></strong> Video (6 min.),
+                    <a href="https://www.osi-genevaforum.org/" target="_blank" rel="noopener">Geneva Forum</a> at 
+                    <a href="https://en.wikipedia.org/wiki/United_Nations_Office_at_Geneva">United Nations</a>, 12/14/2022<br>
+                    <a href="https://youtu.be/J4zPBEkXKL0?t=4381" target="_blank" rel="noopener">
+                        «The Horse» concept &ndash; presentation and vision by Eliane Suter</a> Video (6 min.),
                         <br>6th Annual International Conference on Participatory Research, Citizen Sciences, 
                     Crowd-Innovation and Fab Labs for Peace and Development.
                 </li>
                 <li lang="de">
-                    <strong><a lang="de" href="https://web.archive.org/web/20191203234105/https://www.visit.didacta-digital.ch/de/veranstaltungen/the-horse-digitaler-lernort-zur-grenzuebergreifenden-bildung-lk" 
-                    title="The Horse Konzept an der didacta DIGITAL Swiss, Basel" target="_blank">didacta DIGITAL Swiss</a></strong> Basel, 28.-30.11.2019<br>
+                    <a lang="de" href="https://web.archive.org/web/20191203234105/https://www.visit.didacta-digital.ch/de/veranstaltungen/the-horse-digitaler-lernort-zur-grenzuebergreifenden-bildung-lk" 
+                    title="The Horse Konzept an der didacta DIGITAL Swiss, Basel" target="_blank">didacta DIGITAL Swiss</a> Basel, 28.-30.11.2019<br>
                     
-                    <strong><a lang="de" href="https://web.archive.org/web/20191203234105/https://www.visit.didacta-digital.ch/de/veranstaltungen/the-horse-digitaler-lernort-zur-grenzuebergreifenden-bildung-lk" 
+                    <a lang="de" href="https://web.archive.org/web/20191203234105/https://www.visit.didacta-digital.ch/de/veranstaltungen/the-horse-digitaler-lernort-zur-grenzuebergreifenden-bildung-lk" 
                     title="The Horse Konzept an der didacta DIGITAL Swiss, Basel" target="_blank">The Horse: Digitaler Lernort zur grenzübergreifenden Bildung</a> 
-                    </strong> mit eigenem Stand, <b>Deutsch</b> (Link: archive.org, vorm. didacta-digital.ch)
+                     mit eigenem Stand, Deutsch (Link: archive.org, vorm. didacta-digital.ch)
                 </li>
                 <li>
                     <a lang="de" href="https://phzh.ch/de/Weiterbildung/Weiterbildung-Berufsfachschulen/anlassdetail-weiterbildung-fur-berufsfachschulen/Bili--Erfa-Tagung-2018-bili-digital-und-analog-n144312680.html" target="_blank" rel="noopener">
-                    <strong>Bili – Erfa –Tagung 2018: bili: digital und analog</a></strong> (Pädagogische Hochschule Zürich), 
+                    Bili – Erfa –Tagung 2018: bili: digital und analog</a> (Pädagogische Hochschule Zürich), 
                     introduction to the possibilities of «The Horse» concept;
                     <br> 
-                    <strong><a href="https://sway.office.com/YjgE3aN3k99dhaUq" target="_blank" rel="noopener">
-                        Slides presentation: Teaching & Learning Web "The Horse"</a></strong> (sway.com, English/Deutsch)
+                    <a href="https://sway.office.com/YjgE3aN3k99dhaUq" target="_blank" rel="noopener">
+                        Slides presentation: Teaching & Learning Web "The Horse"</a> (sway.com, English/Deutsch)
                 </li>
                 <li lang="fr"><a href="https://www.iffp.swiss/forum-de-la-maturite-professionnelle-2018" target="_blank">
-                    <strong>Forum de la maturité professionnelle 2018</a></strong>, HEFP (Haute École Fédéderale en Formation Professionelle)
+                    Forum de la maturité professionnelle 2018</a>, HEFP (Haute École Fédéderale en Formation Professionelle)
                     Martigny, 14. March 2018. 
                     <a href="https://www.hefp.swiss/sites/default/files/documents/programme_fomap_13_et_14_mars_2018.pdf" target="_blank">
-                    <strong>Plate-forme d'apprentissage et d'échange Internet «The Horse», une expérience 100% sans papier</strong></a> 
+                    Plate-forme d'apprentissage et d'échange Internet «The Horse», une expérience 100% sans papier</a> 
                     (PDF, conference program, page 8, <b>Français</b>, iffp.swiss)
                 </li>
                 <li lang="de">
-                    <strong>Movetia Konferenz</strong>, Input-Referat und Podiumsdiskussion, 05/16/2018<br>
+                    <strong>Movetia Konferenz, 05/16/2018</strong>, Input-Referat und Podiumsdiskussion<br>
                     <video width="100" style="width:40%;height:auto;min-width:250px;float:left;margin:0.5em 0.5em 0.5em 0;" 
                         controls poster="https://teachingweb.org/assets/img/movetia-The-Horse-presentation-2028.05.16.jpg">
                         <source src="https://teachingweb.org/assets/video/The-horse-concept_Movetia-2018.05.16.mp4" type="video/mp4">
@@ -733,10 +836,10 @@
                 </li>
             </ul>
             <p style="font-size:1em">
-                <span lang="de">News, mehr auf <a href="https://teachingweb.org" target="_blank" rel="noopener">teachingweb.org</a> 
-                    (<b>Deutsch</b>)</span><br>
-                <span>News, more on <a href="https://teachingweb.org/en" target="_blank" rel="noopener">teachingweb.org</a> 
-                    (<b>English</b>)</span>
+                <span lang="de"><strong>Neuigkeiten</strong> auf <a href="https://teachingweb.org" target="_blank" rel="noopener">teachingweb.org (Deutsch)</a> 
+                    </span><br>
+                <span><strong>News</strong> on <a href="https://teachingweb.org/en" target="_blank" rel="noopener">teachingweb.org (English)</a> 
+                    </span>
             </p>
             <!--#endregion-->
         </div>
@@ -745,9 +848,9 @@
         <h3>Websites belonging to «The Horse» project</h3>
         <div style="width: 650px; display:inline-block;max-width: 95%;text-align: left;">
         <span class="txtP">
-            <a href="https://the-horse.education" target="_blank" title="the-horse.education, this website" rel="noopener">THE ! association</a> (the-horse.education, this website)<br>
-            <a href="https://teachingweb.org/" target="_blank" rel="noopener">Neuigkeiten, vertiefte Informationen</a> (teachingweb.org, <b>Deutsch</b>)<br>
-            <a href="https://teachingweb.org/en" target="_blank" rel="noopener" title="teachingweb.org" rel="noopener">News, in-depth information</a> (teachingweb.org, <b>English</b>)<br>                
+            <a href="https://the-horse.education" target="_blank" title="the-horse.education, this website" rel="noopener">THE ! association</a> (this website)<br>
+            <a href="https://teachingweb.org/" target="_blank" rel="noopener">Neuigkeiten, vertiefte Informationen</a> (teachingweb.org, Deutsch)<br>
+            <a href="https://teachingweb.org/en" target="_blank" rel="noopener" title="teachingweb.org" rel="noopener">News, in-depth information</a> (teachingweb.org, English)<br>                
             <br>
             <a href="https://dontwastemy.energy" target="_blank" rel="noopener" title="dontwastemy.energy" rel="noopener">The students' project website</a> (dontwastemy.energy)<br>
             <a href="#" onclick="return false;">Working environment for student collaboration / Arbeitsumgebung für die Kollaboration der Studierenden</a> 
@@ -767,34 +870,131 @@
     </section>
     <!--#endregion press & contact -->
 
-    <!--#region imprint & privacy, footer-->
-    <section id="contact" class="contact">
+    <!--#region partners & sponsors-->
+    <section id="sponsors" class="team-clean" style="text-align:center;">
+        <!--#region sponsors-->
         <div class="container">
-            <h4>Imprint & privacy</h4>
+            <div class="intro">
+                <h2 class="text-center" style="font-size: 2.5em;color:#212529;margin-bottom:0.6em;">Sponsors</h2>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <a href="" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img class="" src="assets/img/sponsors/logo_robair.ch.png" alt="Robair logo featuring the word ROBAIR slanted upwards with ROBAIR.CH underneath." title="Robair Paragliding School"></a>
+                    <p class="title">
+                        <a href="https://robair.ch/" target="_blank" rel="noopener">Robair</a>
+                        <br>
+                        Paragliding school.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a href="https://www.abs.ch/en" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img class="" src="assets/img/sponsors/logo_abs.ch.png" alt="Alternative Bank Switzerland logo, featuring a bird on the left side followed by the name of the bank" title="Alternative Bank Switzerland"></a>
+                    <p class="title">
+                        <a href="https://abs.ch/en" target="_blank" rel="noopener">ABS</a>
+                        <br>
+                        Alternative Bank Switzerland.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a href="https://jazzvinyl.ch" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img class="" src="assets/img/sponsors/logo_grashalm-it.ch.png" alt="Grashalm IT GmbH logo featuring a green blade of grass with a red beetle on top with the company name below" title="Grashalm IT GmbH - Jazz Vinyl (jazzvinyl.ch) the passion of the company owner"></a>
+                    <p class="title">
+                        <a href="https://jazzvinyl.ch" target="_blank" rel="noopener">Jazz vinyl</a><br>
+                        That is Grashalm-IT's owner's passion.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a href="" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img class="" src="assets/img/sponsors/logo_ubub.ch.png" alt="ubub logo featuring the letters UB with its reflection underneath followed by the words Umweltbildung Umweltberatung in a vertical manner and a bird on top." title="ubub Environmental Education and Consulting"></a>
+                    <p class="title">
+                        <a href="https://ubub.ch" target="_blank" rel="noopener">ubub</a>
+                        <br>
+                        Environmental education & consulting.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a href="https://movetia.ch" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img class="" src="assets/img/sponsors/logo_movetia.ch.png" alt="Movetia logo featuring a the letters M O V in slanted format followed by the words E T I A." title="Movetia - Exchange and mobility"></a>
+                    <p class="title">
+                        <a href="https://movetia.ch/en" target="_blank" rel="noopener">Movetia</a><br>
+                        National agency for exchange and mobility.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a href="" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img class="" src="assets/img/sponsors/logo_kulturpark.ch.png" alt="Hamasil Stiftung Logo featuring the words of the foundation in black color on top of a white background" title="Hamasil Stiftung"></a>
+                    <p class="title">
+                        <a href="https://kulturpark.ch" target="_blank" rel="noopener">Kulturpark</a><br>
+                        Promoting sustainable, social and cultural development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--#endregion-->
+
+        <!--#region partners-->
+        <div class="team-clean" style="text-align:center;margin-top:2.9em">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center" style="font-size: 2.5em;color:#212529;margin-bottom:0.6em;">Partners 2024, 2025</h2>
+                </div>
+                <div class="row people">
+                    <div class="col-md-6 col-lg-4 item">
+                        <a href="https://www.kvz-schule.ch/" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img src="assets/img/partners/partner_KV-Zuerich-Switzerland.png" alt="KV Zürich Schule Logo." title="KV Zurich Business School"></a>
+                        <p class="title">
+                            <a href="https://www.kvz-schule.ch/" target="_blank" rel="noopener">KV Zurich Business School</a> Switzerland.
+                            Empowerment in business education.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a href="https://christnagarschoolicse.edu.in/" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img src="assets/img/partners/partner_Christ-Nagar-India.png" alt="Christ Nagar Higher Secondary School logo featuring a book with a lit lamp on top with the words 'The Way The Truth The Life' above and below it in Hindi and English followed by the name of the school" title="Christ Nagar Higher Secondary School"></a>
+                        <p class="title">
+                            <a href="https://christnagarschoolicse.edu.in/" target="_blank" rel="noopener">Christ Nagar</a> Higher Secondary School, India. </strong>
+                            Excelling in educating youth.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a href="https://vokasi.ui.ac.id/web/" target="_blank" rel="noopener" class="lnkOnImgNoArrow"><img src="assets/img/partners/partner_Vokasi-Universitas-Indonesia.png" alt="Program Pendidikan Vokasi Universitas Indonesia Logo" title="Vocational Education Program, Universitas Indonesia"></a>
+                        <p class="title">
+                            <a href="https://vokasi.ui.ac.id/web/" target="_blank" rel="noopener">Vocational education program</a> Universitas Indonesia. 
+                            Excellence in vocational training.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--#endregion-->
+        
+    </section>
+    <!--#endregion-->
+
+    <!--#region imprint & privacy, footer-->
+    <section class="contact" style="padding-top:0">
+        <div class="container">
+            <h2 style="font-size: 2em;color:#212529;">Imprint & privacy</h2>
+            <p style="font-size:0.9em;text-align: left;">
+                The website <strong>does not use</strong> cookies.<br>
+                The website <strong>does not use</strong> third party services such as Google Analytics, Google Fonts, CDN Services, FB, Twitter, etc.<br>
+                <details style="font-size:0.9em;text-align: left;">
+                    <summary>More ...</summary>
+                    When accessing the website, the web server logs the access data in log files (IP number, date, time, browser and other technical information). 
+                    <br>This usage data <b>could be used</b> for statistical evaluations. 
+                    We have integrated the <a href="https://su-pa.net/wikiPrevBox/" target="_blank" rel="noopener">Summary box for Wikipedia links</a> 
+                    (su-pa.net) we developed. 
+                    When you hover your <a href="https://en.wikipedia.org/wiki/Computer_mouse">mouse</a> over a Wikipedia link or tab it with your finger 
+                    to display a "Summery Box", it will contact one of Wikipedia's servers to retrieve the summary of the matching Wikipedia article.
+                    
+                    <br><br><strong>Data Protection & Privacy:</strong> 
+                    According to the <a href="https://www.fedlex.admin.ch/eli/oc/2022/491/de" target="_blank">Bundesgesetz über den Datenschutz</a> 
+                    (DSG, 01.09.2023, admin.ch, German) of the Federal Constitution Article 31 
+                    <a href="https://www.fedlex.admin.ch/eli/oc/2022/491/de#art_31" target="_blank">Rechtfertigungsgründe</a>&nbsp;(admin.ch, German). 
+                    <br><br><strong>Dominik Fehr</strong>, data protection officer,
+                    <bR>08 Sept 2023, 
+                    <a style="color: darkblue" href="mailto:privacy@the-horse.education">privacy@the-horse.education</a>
+                </details>
+            </p>
+            <img width="150" alt="THE ! asssociation with The Horse concept" title="THE ! asssociation with The Horse concept" src="assets/img/QR-the-horse.education.png" />
+            <br><br>
             <p style="font-size:0.9em;">THE ! association<br>
                 Friedheimstr. 5, c/o B. Jäckli<br>
                 8057 Zürich, Switzerland<br>                
-                <a style="color: darkblue" href="mailto:hello@the-horse.education">hello@the-horse.education</a>
+                <a style="color: darkblue" href="mailto:box@the-horse.education">box@the-horse.education</a>
             </p>
-            <p style="font-size:0.9em;">
-                The website <strong>does not use</strong> cookies.
-                The website <strong>does not use</strong> third party services such as Google Analytics, Google Fonts, CDN Services, FB, Twitter, etc.
-                When accessing the website, the web server logs the access data in log files (IP number, date, time, browser and other technical information). 
-                This usage data <b>could be used</b> for statistical evaluations. 
-                We have integrated the <a href="https://su-pa.net/wikiPrevBox/" target="_blank" rel="noopener">Summary box for Wikipedia links</a> 
-                (su-pa.net) we developed. 
-                When you move your 
-                <a href="https://en.wikipedia.org/wiki/Computer_mouse">mouse</a> over a Wikipedia link to display a "Summery Box", 
-                it will contact one of Wikipedia's servers to retrieve the summary of a Wikipedia article.
-                
-                <strong>Data Protection & Privacy:</strong> 
-                According to the <a href="https://www.fedlex.admin.ch/eli/oc/2022/491/de" target="_blank">Bundesgesetz über den Datenschutz</a> 
-                (DSG, 01.09.2023, admin.ch, German) of the Federal Constitution Article 31 
-                <a href="https://www.fedlex.admin.ch/eli/oc/2022/491/de#art_31" target="_blank">Rechtfertigungsgründe</a>&nbsp;(admin.ch, German). 
-                <br>Dominik Fehr, data protection officer, 08 Sept 2023
-                <br><a style="color: darkblue" href="mailto:privacy@the-horse.education">privacy@the-horse.education</a>
-            </p>
-            <img width="150" alt="THE ! asssociation with The Horse concept" title="THE ! asssociation with The Horse concept" src="assets/img/QR-the-horse.education.png" />
         </div>
     </section>
     <img title="jump up" id="btnScrollToTop" style="display: none;" src="assets/img/btnScrollTop.png">
@@ -803,7 +1003,7 @@
         <div class="container">
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="https://su-pa.net" target="_blank" rel="noopener" class="lnkCopy">© 
-                    <span style="color:goldenrod">su-pa.net</span> created 11/2019, last updated 15 June 2024</a></li>
+                    <span style="color:goldenrod">su-pa.net</span> created 11/2019, last updated 24 July 2024</a></li>
             </ul>
         </div>
     </footer>
