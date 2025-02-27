@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Page -->
+  <url>
+    <loc>https://the-horse.education/</loc>
+    <lastmod>2025-02-27</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- PDF Files -->
+  <url>
+    <loc>https://the-horse.education/assets/pdf/THE-association_Statutes_V1.2_ENG.pdf</loc>
+    <lastmod>2019-04-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the-horse.education/assets/pdf/The-Horse-Konzept_Press-release-EN_July-2020.pdf</loc>
+    <lastmod>2020-07-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the-horse.education/assets/pdf/The-Horse_Informationsblatt-2023.pdf</loc>
+    <lastmod>2023-08-01</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://teachingweb.org/pdf/THE-Horse-Konzept_ffu-pee-forum_2020-03_S15.pdf</loc>
+    <lastmod>2020-03-01</lastmod>
+    <priority>0.8</priority>
+  </url>  
+  <url>
+    <loc>https://the-horse.education/assets/pdf/The-Horse-Verein_QR-Rechnung_inkl.Twint_D.pdf</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- External Key Project Links -->
+  <url>
+    <loc>https://dontwastemy.energy/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teachingweb.org/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teachingweb.org/en</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
