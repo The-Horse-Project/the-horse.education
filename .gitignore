@@ -4,6 +4,9 @@
 # movetia docs
 /movetia/
 
+# tools
+/tools/
+
 # certificates
 cert/*.pdf
 
