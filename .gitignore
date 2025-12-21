@@ -13,13 +13,16 @@ cert/*.pdf
 # except THE-certificate-specimen.pdf
 !cert/THE-certificate-specimen.pdf
 
+# other
+_bak*/
+*.bak.html
+
 test.html
 test2.html
 
 # log[0-9].txt      # Ignores log0.txt, log1.txt, ..., log9.txt
 # log[015].txt      # Ignores log0.txt, log1.txt, log5.txt
 # logs/log?.txt     # Ignores logs/log1.txt, logs/logA.txt, etc.
-# logs/**/          # Ignores all directories named logs anywhere in the repository
 # *.log             # Ignores all .log files anywhere in the repository
 # /logs/            # Ignores the logs directory in the root
 
